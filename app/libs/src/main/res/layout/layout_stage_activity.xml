@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_result"
+    android:fitsSystemWindows="true"
+    tools:context=".StageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/TemaKu.PopupOverlay" >
+
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:src="@drawable/panahback" />
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <antiboring.game.view.font.RobotoFont
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/level"
+            android:textColor="@color/blue_smooth"
+            android:textSize="@dimen/level"/>
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_below="@+id/level"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <antiboring.game.view.font.RobotoFont
+                    android:id="@+id/txtLvl"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:text="01"
+                    android:textColor="@color/blue_smooth"
+                    android:textSize="@dimen/level01"/>
+
+                <RelativeLayout
+                    android:id="@+id/TebakKata"
+                    android:layout_width="140dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/background_selector2"
+                    android:gravity="center">
+
+                    <antiboring.game.view.font.RobotoFont
+                        android:id="@+id/TebakKataText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="@string/tebakkata"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+                    <ImageView
+                        android:id="@+id/starKata"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/TebakKataText"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bintang"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/TebakGambar"
+                android:layout_width="130dp"
+                android:layout_height="300dp"
+                android:background="@drawable/backgorund_selector"
+                android:gravity="center">
+
+
+                <antiboring.game.view.font.RobotoFont
+                    android:id="@+id/TebakGambarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/tebakgambar"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"/>
+                <ImageView
+                    android:id="@+id/starGambar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/TebakGambarText"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/bintang"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

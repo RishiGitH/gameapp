@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Coins"
+        android:title="100"
+        materialdesign:showAsAction="always" />
+
+    <item
+        android:id="@+id/Count"
+        android:title="30"
+        materialdesign:showAsAction="always" />
+
+</menu>

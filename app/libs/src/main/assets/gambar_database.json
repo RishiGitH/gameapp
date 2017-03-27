@@ -1,0 +1,17 @@
+{
+  "1": [
+    {
+      "gambar_url": "gambar_easy1",
+      "jawaban": "balik papan"
+    },
+    {
+      "gambar_url": "gambar_medium1",
+      "jawaban": "cubit cubitan"
+    },
+    {
+      "gambar_url": "gambar_hard1",
+      "jawaban": "bantal guling"
+    }
+  ]
+}
+
